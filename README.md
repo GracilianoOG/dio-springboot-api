@@ -4,6 +4,25 @@
 
 Este projeto consiste em uma pequena API desenvolvida com Java, Springboot e Gradle. Esse foi meu primeiro contato com a framework e consegui aprender diversos conceitos sobre desenvolvimento de APIs em Java.
 
+## 📦 Configuração
+
+Para executar o projeto como perfil de `desenvolvimento`, é necessário configurar a seguinte variável de ambiente:
+
+```bash
+SPRING_PROFILES_ACTIVE=dev
+```
+
+O perfil de `produção` requer essa outras variáveis para configurar o PostgreSQL (elas estão em uso no arquivo `application-prd.yml`):
+
+```bash
+SPRING_PROFILES_ACTIVE=prd
+PGDATABASE=...
+PGHOST=...
+PGPASSWORD=...
+PGPORT=...
+PGUSER=...
+```
+
 ## 🗂️ Estrutura do projeto
 
 ```
